@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.titulo h1 {
+    margin-left: 20px;
+}
+
 body {
     background: #000000;
     color: #ffffff;
@@ -17,6 +21,23 @@ body {
 a {
     color: #ffffff;
     text-decoration: none;
+}
+
+/* ----------------- */
+/* COLORES GENERALES */
+/* ----------------- */
+
+/* Colores del navegador */
+p::selection {
+    background: #ff377f;
+}
+
+h1::selection {
+    background: #ff377f;
+}
+
+.delphi code::selection {
+    background: #ffee00;
 }
 
 /* ÍNDICE */
@@ -33,7 +54,7 @@ a {
     counter-increment: item;
 }
 
-.container {
+.contenedor {
     width: 90%;
     margin: auto;
 }
@@ -57,7 +78,7 @@ a {
 }
 
 .navegacion a:hover {
-    color: aqua;
+    color: #00ffff;
 }
 
 /* NAVEGACION IZQUIERDA */
