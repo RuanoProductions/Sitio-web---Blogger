@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>Ruano Productions</title>
+        <b:skin>
+        <!-- ESTILOS CSS -->
+        </b:skin>
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <title>Ruano Productions</title>
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"></link>
+        <!-- FONT OSWALD -->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet"></link>
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="styles.css"></link>
+        <!-- HIGHLIGHTS CODE -->
+        <link rel="stylesheet" href="\Highlights\styles\monokai-sublime.css"></link>
+        <script src="\Highlights\highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+    <body>
+        <h1>Ruano Prodcutions</h1>
+        <pre>
+            <code class="delphi">
+                Procedure menu_3;  {comentario}                                                               
+                VAR
+                   i: integer;
+                begin
+                     cursoroff;
+                     ClrScr;
+                     GotoXY(29,5);
+                     ascii('%c', 201);       { ╔ }
+                     GotoXY(89,5);
+                     ascii('%c', 187);       { ╗ }
+                     For i := 30 to 88 do
+                     begin
+                          GotoXY(i,5);
+                          ascii('%c', 205);  { ═ }
+                     end;
+                     For i := 1 to 6 do
+                     begin
+                          GotoXY(29,5 + i);
+                          ascii('%c', 186);  { ║ }
+                          GotoXY(89,5 + i);
+                          ascii('%c', 186);  { ║ }
+                     end;
+                     GotoXY(29,5 + 2);
+                     ascii('%c', 204);       { ╠ }
+                     GotoXY(89,5 + 2);
+                     ascii('%c', 185);       { ╣ }
+                     For i := 30 to 88 do
+                     begin
+                          GotoXY(i,5 + 2);
+                          ascii('%c', 205);  { ═ }
+                     end;
+                     GotoXY(29,5 + 7);
+                     ascii('%c', 200);       { ╚ }
+                     GotoXY(89,5 + 7);
+                     ascii('%c', 188);       { ╝ }
+                     For i := 30 to 88 do
+                     begin
+                          GotoXY(i,5 + 7);
+                          ascii('%c', 205);  { ═ }
+                     end;
+                     Textcolor(14);
+                     GotoXY(52,6);
+                     Write ('Lista ordenada');
+                end;
+            </code>
+        </pre>
+        <div class="container">
+            <img src="Imagenes/RP LOGO.png" alt="RP LOGO" class="nav-brand"></img>
+            <nav class="index">
+                <ol class="has-white-color has-text-color" type="1">
+                    <li><span style="color:#000000;" class="has-inline-color"><a href="#inicializar"> Inicializar</a></span></li>
+                    <li><span style="color:#000000;" class="has-inline-color"><a href="#guardar"> Guardar</a></span></li>
+                    <li><span style="color:#000000;" class="has-inline-color"><a href="#mostrar"> Mostrar</a></span></li>
+                    <li><span style="color:#000000;" class="has-inline-color"><a href="#bloques"> Bloques</a></span>
+                        <ol class="lower-alpha">
+                            <li><span style="color:#000000;"><a href="#bloques-menu-de-opciones"> Menú de opciones</a></span></li>
+                        </ol>
+                    </li>
+                    <li><span style="color:#000000;" class="has-inline-color"><a href="#ejemplos_pascal"> Código: Pascal</a></span>
+                        <ol class="lower-alpha">
+                            <li><span style="color:#000000"><a href="#ordenamiento"> Ordenamiento</a></span></li>
+                            <li><span style="color:#000000"><a href="#busqueda"> Busqueda</a></span></li>
+                        </ol>
+                    </li>
+               </ol>
+            </nav>
+            <nav>
+               <ul class="nav-menu-right">
+                   <li>
+                       <a href="#">
+                           <i class="fas fa-search"></i>
+                       </a>
+                   </li>
+               </ul>
+            </nav>
+        </div>
+        <b:section id="main">
+        </b:section>
+    </body>
+</html>
