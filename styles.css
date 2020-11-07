@@ -28,16 +28,13 @@ a {
 /* ----------------- */
 
 /* Colores del navegador */
-p::selection {
-    background: #ff377f;
-}
-
+p::selection,
 h1::selection {
     background: #ff377f;
 }
 
-.delphi code::selection {
-    background: #ffee00;
+code::selection {
+    background: #66ff007c;
 }
 
 /* ÍNDICE */
@@ -45,7 +42,7 @@ h1::selection {
     counter-reset: item;
 }
 
-.index li{
+.index li {
     display: block;
 }
 
